@@ -1,0 +1,82 @@
+<!-- THIS WOULD BE THE MAIN PAGE FOR CUSTOMER ORDERS -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HOUSE CASS CAFE</title>
+  <!-- <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    /> -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <form class="form" action="/savedToDatabase" method="POST">
+      <section>
+        <section class="imgsect">
+          <img src="img/blackcoffee.jpeg" alt="">
+          <span>Black Coffee</span>
+        </section>
+        <section class="imgsect">
+          <img src="img/icedcoffee.jpeg" alt="">
+          <span>Iced Coffee</span>
+        </section>
+        <section class="imgsect">
+          <img src="img/latte.jpeg" alt="">
+          <span>Latte</span>
+        </section>
+        <section class="imgsect">
+          <img src="img/americano.jpeg" alt="">
+          <span>Americano</span>
+        </section>
+      </section>
+      <section>
+        <section class="imgsect2">
+          <img src="img/frappuccino.jpeg" alt="">
+          <span>Frappuchino</span>
+        </section>
+        <section class="imgsect2">
+          <img src="img/macchiato.webp" alt="">
+          <span>Macchiato</span>
+        </section>
+        <section class="imgsect2">
+          <img src="img/Cappuccino.jpeg" alt="">
+          <span>Cappuccino</span>
+        </section>
+        <section class="imgsect2">
+          <img src="img/puppuccino.jpeg" alt="">
+          <span>Puppuccino</span>
+        </section>
+      </section>
+      <select name="coffeeChoice" id="">
+        <option value="Black Coffee">Black Coffee</option>
+        <option value="Iced Coffee">Iced Coffee</option>
+        <option value="Latte">Latte</option>
+        <option value="Americano">Americano</option>
+        <option value="Frappuchino">Frappuchino</option>
+        <option value="Macchiato">Macchiato</option>
+        <option value="Cappucino">Cappucino</option>
+        <option value="Puppucino">Puppucino</option>
+      </select>
+      <h2>Special Instructions</h2>
+      <input type="text" placeholder="Special Instructions" name="coffeeInstructions">
+      <h2>Customer Name</h2>
+      <input type="text" placeholder="Your name here!" name="customerName">
+      <button class="submit" type="submit">SUBMIT ORDER!</button>
+    </form>
+    <h2>Baristas Login Here</h2>
+    <a class="login" href="/login">Barista Account</a>
+
+
+  </div>
+</body>
+
+</html>
